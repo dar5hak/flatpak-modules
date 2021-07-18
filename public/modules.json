@@ -1,0 +1,74 @@
+[
+  {
+    "name": "GCrypt",
+    "tags": [
+      "libgcrypt",
+      "cryptography",
+      "encryption",
+      "decryption",
+      "hash"
+    ],
+    "data": [
+      {
+        "version": "1.8.8 (LTS)",
+        "module": {
+          "name": "gcrypt",
+          "buildsystem": "autotools",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.8.8.tar.bz2",
+              "sha256": "895de2bb981dd127f0821d1ce13fadf7d760f9fa7737648b15f2c1fe13cc5af5"
+            }
+          ]
+        }
+      },
+      {
+        "version": "1.9.3",
+        "module": {
+          "name": "gcrypt",
+          "buildsystem": "autotools",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://www.gnupg.org/ftp/gcrypt/libgcrypt/libgcrypt-1.9.3.tar.bz2",
+              "sha256": "97ebe4f94e2f7e35b752194ce15a0f3c66324e0ff6af26659bbfb5ff2ec328fd"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "GtkSourceView",
+    "tags": [
+      "code",
+      "syntax",
+      "highlighting"
+    ],
+    "data": [
+      {
+        "version": "3.24.11",
+        "module": {
+          "name": "gtksourceview",
+          "sources": {
+            "type": "archive",
+            "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz",
+            "sha256": "691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd"
+          }
+        }
+      },
+      {
+        "version": "3.24.10",
+        "module": {
+          "name": "gtksourceview",
+          "sources": {
+            "type": "archive",
+            "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.10.tar.xz",
+            "sha256": "ab5406cdd0bdcf66afcd52b1e048a2f43c0f3ab391644ee30d9ac419b93cd59b"
+          }
+        }
+      }
+    ]
+  }
+]
