@@ -1,13 +1,54 @@
 [
   {
+    "name": "Handy",
+    "tags": ["libhandy", "touch", "gesture", "responsive"],
+    "data": [
+      {
+        "version": "1.2.3",
+        "module": {
+          "name": "handy",
+          "buildsystem": "meson",
+          "sources": {
+            "type": "archive",
+            "url": "https://download.gnome.org/sources/libhandy/1.2/libhandy-1.2.3.tar.xz",
+            "sha256": "92ec4a581ec1b41dd07a4e8faaf5d52ae37cabb7e1fa7f944d6cafbe596b6d61"
+          },
+          "cleanup": ["/bin"]
+        }
+      }
+    ]
+  },
+  {
+    "name": "GtkSourceView",
+    "tags": ["libgtksourceview", "code", "syntax", "highlighting"],
+    "data": [
+      {
+        "version": "3.24.11",
+        "module": {
+          "name": "gtksourceview",
+          "sources": {
+            "type": "archive",
+            "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz",
+            "sha256": "691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd"
+          }
+        }
+      },
+      {
+        "version": "3.24.10",
+        "module": {
+          "name": "gtksourceview",
+          "sources": {
+            "type": "archive",
+            "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.10.tar.xz",
+            "sha256": "ab5406cdd0bdcf66afcd52b1e048a2f43c0f3ab391644ee30d9ac419b93cd59b"
+          }
+        }
+      }
+    ]
+  },
+  {
     "name": "GCrypt",
-    "tags": [
-      "libgcrypt",
-      "cryptography",
-      "encryption",
-      "decryption",
-      "hash"
-    ],
+    "tags": ["libgcrypt", "cryptography", "encryption", "decryption", "hash"],
     "data": [
       {
         "version": "1.8.8 (LTS)",
@@ -40,33 +81,37 @@
     ]
   },
   {
-    "name": "GtkSourceView",
-    "tags": [
-      "code",
-      "syntax",
-      "highlighting"
-    ],
+    "name": "libcanberra",
+    "tags": ["sound", "audio"],
     "data": [
       {
-        "version": "3.24.11",
+        "version": "0.30",
         "module": {
-          "name": "gtksourceview",
+          "name": "canberra",
           "sources": {
             "type": "archive",
-            "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.11.tar.xz",
-            "sha256": "691b074a37b2a307f7f48edc5b8c7afa7301709be56378ccf9cc9735909077fd"
+            "url": "http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz",
+            "sha256": "c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72"
           }
         }
-      },
+      }
+    ]
+  },
+  {
+    "name": "libical",
+    "tags": [],
+    "data": [
       {
-        "version": "3.24.10",
+        "version": "3.0.10",
         "module": {
-          "name": "gtksourceview",
+          "name": "libical",
+          "buildsystem": "cmake-ninja",
           "sources": {
             "type": "archive",
-            "url": "https://download.gnome.org/sources/gtksourceview/3.24/gtksourceview-3.24.10.tar.xz",
-            "sha256": "ab5406cdd0bdcf66afcd52b1e048a2f43c0f3ab391644ee30d9ac419b93cd59b"
-          }
+            "url": "https://github.com/libical/libical/releases/download/v3.0.10/libical-3.0.10.tar.gz",
+            "sha512": "e32ccaff9b8a501f340567a1221c580023e4ed79918519bfa88aee2c0e8b62f5ea37e10907f2eb6fbd346a57408708a74e30aaf9a57a8d711eae30ddc974ddd0"
+          },
+          "cleanup": ["/lib/cmake"]
         }
       }
     ]
