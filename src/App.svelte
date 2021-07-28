@@ -28,7 +28,7 @@
 
 <style>
   :root {
-    font-family: Roboto, sans-serif;
+    font-family: "PT Sans", sans-serif;
   }
 
   main {
@@ -42,7 +42,7 @@
   h1 {
     color: #f37329;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: normal;
     line-height: 1.1;
     margin: 2rem 0;
     max-width: 14rem;

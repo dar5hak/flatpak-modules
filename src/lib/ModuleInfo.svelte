@@ -39,7 +39,7 @@
 
 <style>
   .module-name {
-    font-weight: 500;
+    font-weight: bold;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
   }
@@ -47,7 +47,6 @@
   .version {
     color: #4d4d4d;
     font-size: 1rem;
-    font-weight: 500;
     background: transparent;
     border: 1px solid transparent;
     border-radius: 3px;
@@ -72,8 +71,7 @@
   }
 
   code {
-    font-family: "Roboto Mono", monospace;
-    font-size: 14px;
+    font-family: "Inconsolata", monospace;
     overflow-x: auto;
   }
 </style>
