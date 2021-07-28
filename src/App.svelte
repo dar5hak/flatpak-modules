@@ -23,6 +23,17 @@
   </section>
   {#each displayedModules as module (module.name)}
     <ModuleInfo {module} {format} />
+  {:else}
+    <section class="no-results">
+      <h2>No results</h2>
+      <p>
+        Cannot find what you are looking for?
+        <a
+          href="https://github.com/dar5hak/flatpak-modules/issues/new"
+          target="_blank"
+          rel="noreferrer">Suggest an addition.</a>
+      </p>
+    </section>
   {/each}
 </main>
 
@@ -48,6 +59,14 @@
     max-width: 14rem;
   }
 
+  a {
+    color: #f37329;
+  }
+
+  a:visited {
+    color: #cc3b02;
+  }
+
   @media (min-width: 480px) {
     h1 {
       max-width: none;
@@ -59,5 +78,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
+  }
+
+  .no-results {
+    text-align: center;
+    margin: 4rem;
   }
 </style>
