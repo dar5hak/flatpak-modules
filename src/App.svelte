@@ -21,7 +21,7 @@
     <Search bind:query />
     <FormatSelector bind:selectedFormat={format} />
   </section>
-  {#each displayedModules as module}
+  {#each displayedModules as module (module.name)}
     <ModuleInfo {module} {format} />
   {/each}
 </main>
