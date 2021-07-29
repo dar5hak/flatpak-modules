@@ -1,7 +1,7 @@
 [
   {
     "name": "Handy",
-    "tags": ["libhandy", "gtk", "touch", "gesture", "responsive"],
+    "tags": ["libhandy", "hdy", "gtk", "touch", "gesture", "responsive"],
     "data": [
       {
         "version": "1.2.3",
