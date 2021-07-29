@@ -19,6 +19,62 @@
     ]
   },
   {
+    "name": "Adwaita",
+    "tags": ["libadwaita", "gtk", "touch", "gesture", "responsive"],
+    "data": [
+      {
+        "version": "1.0.0-alpha.2",
+        "module": {
+          "name": "libadwaita",
+          "buildsystem": "meson",
+          "config-opts": ["-Dexamples=false", "-Dtests=false"],
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
+              "tag": "1.0.0-alpha.2"
+            }
+          ]
+        }
+      },
+      {
+        "version": "1.0.0-alpha.1",
+        "module": {
+          "name": "libadwaita",
+          "buildsystem": "meson",
+          "config-opts": ["-Dexamples=false", "-Dtests=false"],
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
+              "tag": "1.0.0-alpha.1"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Dazzle",
+    "tags": ["gtk", "gnome", "libdazzle"],
+    "data": [
+      {
+        "version": "3.40.0",
+        "module": {
+          "name": "libdazzle",
+          "buildsystem": "meson",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://download.gnome.org/sources/libdazzle/3.40/libdazzle-3.40.0.tar.xz",
+              "sha256": "dba99a7e65fa6662c012b306e5d0f99ff3b466a46059ea7aa0104aaf65ce4ba5"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
     "name": "GtkSourceView",
     "tags": ["libgtksourceview", "code", "syntax", "highlighting"],
     "data": [
