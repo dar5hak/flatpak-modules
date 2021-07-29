@@ -24,16 +24,18 @@
   {#each displayedModules as module (module.name)}
     <ModuleInfo {module} {format} />
   {:else}
-    <section class="no-results">
-      <h2>No results</h2>
-      <p>
-        Cannot find what you are looking for?
-        <a
-          href="https://github.com/dar5hak/flatpak-modules/issues/new"
-          target="_blank"
-          rel="noreferrer">Suggest an addition.</a>
-      </p>
-    </section>
+    {#if modules}
+      <section class="no-results">
+        <h2>No results</h2>
+        <p>
+          Cannot find what you are looking for?
+          <a
+            href="https://github.com/dar5hak/flatpak-modules/issues/new"
+            target="_blank"
+            rel="noreferrer">Suggest an addition.</a>
+        </p>
+      </section>
+    {/if}
   {/each}
 </main>
 
