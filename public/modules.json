@@ -75,6 +75,41 @@
     ]
   },
   {
+    "name": "Libgee",
+    "tags": [
+      "collection",
+      "data",
+      "structure",
+      "generic",
+      "array",
+      "list",
+      "set",
+      "iterator",
+      "map",
+      "dictionary",
+      "sort",
+      "future",
+      "promise",
+      "queue",
+      "hash"
+    ],
+    "data": [
+      {
+        "version": "0.20.4",
+        "module": {
+          "name": "libgee",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://download.gnome.org/sources/libgee/0.20/libgee-0.20.4.tar.xz",
+              "sha256": "524c1bf390f9cdda4fbd9a47b269980dc64ab5280f0801b53bc69d782c72de0e"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
     "name": "GtkSourceView",
     "tags": ["libgtksourceview", "code", "syntax", "highlighting"],
     "data": [
