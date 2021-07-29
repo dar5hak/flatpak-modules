@@ -1,12 +1,12 @@
 [
   {
     "name": "Handy",
-    "tags": ["libhandy", "touch", "gesture", "responsive"],
+    "tags": ["libhandy", "gtk", "touch", "gesture", "responsive"],
     "data": [
       {
         "version": "1.2.3",
         "module": {
-          "name": "handy",
+          "name": "libhandy",
           "buildsystem": "meson",
           "sources": {
             "type": "archive",
@@ -154,7 +154,7 @@
     ]
   },
   {
-    "name": "libical",
+    "name": "Libical",
     "tags": [],
     "data": [
       {
