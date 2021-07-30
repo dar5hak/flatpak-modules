@@ -235,8 +235,7 @@
         "version": "1.19.1",
         "module": {
           "name": "gst-libav",
-          "buildsystem": "autotools",
-          "config-opts": "--with-system-libav=no",
+          "buildsystem": "meson",
           "sources": [
             {
               "type": "archive",
