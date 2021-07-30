@@ -232,16 +232,32 @@
     "tags": ["sound", "audio", "gstreamer", "ffmpeg", "encoder", "decoder", "muxer", "demuxer"],
     "data": [
       {
-        "version": "1.16",
+        "version": "1.19.1",
         "module": {
           "name": "gst-libav",
           "buildsystem": "autotools",
           "config-opts": "--with-system-libav=no",
           "sources": [
             {
-              "type": "git",
-              "url": "git://anongit.freedesktop.org/gstreamer/gst-libav",
-              "tag": "1.16"
+              "type": "archive",
+              "url": "https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.19.1.tar.xz",
+              "sha256": "7a36c466a0942667f5be5d427d0840d1b81c187a4b93a73dcf10e53bf9cf196c"
+            }
+          ]
+        },
+        "finish-args": "--env=GST_PLUGIN_PATH_1_0=/app/lib/gstreamer-1.0"
+      },
+      {
+        "version": "1.16.3",
+        "module": {
+          "name": "gst-libav",
+          "buildsystem": "autotools",
+          "config-opts": "--with-system-libav=no",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://gstreamer.freedesktop.org/src/gst-libav/gst-libav-1.16.3.tar.xz",
+              "sha256": "d10c5eb1a00a91de97c85c0956c663aa6e99d268195cdec4534c179b831538ec"
             }
           ]
         },
