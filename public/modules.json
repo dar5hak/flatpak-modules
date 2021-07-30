@@ -226,5 +226,27 @@
         }
       }
     ]
+  },
+  {
+    "name": "gst-libav",
+    "tags": ["sound", "audio", "gstreamer", "ffmpeg", "encoder", "decoder", "muxer", "demuxer"],
+    "data": [
+      {
+        "version": "1.16",
+        "module": {
+          "name": "gst-libav",
+          "buildsystem": "autotools",
+          "config-opts": "--with-system-libav=no",
+          "sources": [
+            {
+              "type": "git",
+              "url": "git://anongit.freedesktop.org/gstreamer/gst-libav",
+              "tag": "1.16"
+            }
+          ]
+        },
+        "finish-args": "--env=GST_PLUGIN_PATH_1_0=/app/lib/gstreamer-1.0"
+      }
+    ]
   }
 ]
