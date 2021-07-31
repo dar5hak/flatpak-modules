@@ -229,13 +229,23 @@
   },
   {
     "name": "gst-libav",
-    "tags": ["sound", "audio", "gstreamer", "ffmpeg", "encoder", "decoder", "muxer", "demuxer"],
+    "tags": [
+      "sound",
+      "audio",
+      "gstreamer",
+      "ffmpeg",
+      "encoder",
+      "decoder",
+      "muxer",
+      "demuxer"
+    ],
     "data": [
       {
         "version": "1.19.1",
         "module": {
           "name": "gst-libav",
           "buildsystem": "meson",
+          "config-opts": "--with-system-libav=no",
           "sources": [
             {
               "type": "archive",
