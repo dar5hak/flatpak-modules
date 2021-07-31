@@ -263,5 +263,80 @@
         "finish-args": "--env=GST_PLUGIN_PATH_1_0=/app/lib/gstreamer-1.0"
       }
     ]
+  },
+  {
+    "name": "BAMF",
+    "tags": ["libbamf"],
+    "data": [
+      {
+        "version": "0.5.5",
+        "module": {
+          "name": "bamf",
+          "sources": {
+            "type": "archive",
+            "url": "https://launchpad.net/bamf/0.5/0.5.5/+download/bamf-0.5.5.tar.xz",
+            "md5": "682269ccdde6f6842cceb3cd636d087e"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "WNCK",
+    "tags": [
+      "window",
+      "navigator",
+      "construction",
+      "kit",
+      "pager",
+      "tasklist",
+      "gtk",
+      "gnome"
+    ],
+    "data": [
+      {
+        "version": "40.0",
+        "module": {
+          "name": "libwnck",
+          "buildsystem": "meson",
+          "cleanup": ["/bin", "/include", "/lib/pkgconfig"],
+          "sources": {
+            "type": "archive",
+            "url": "https://download.gnome.org/sources/libwnck/40/libwnck-40.0.tar.xz",
+            "sha256": "30cb79a839f90cd66f3e202f3f98cb5166fa0cd9b92eb571ad9c470a43021d83"
+          }
+        }
+      },
+      {
+        "version": "3.36.0",
+        "module": {
+          "name": "libwnck",
+          "buildsystem": "meson",
+          "cleanup": ["/bin", "/include", "/lib/pkgconfig"],
+          "sources": {
+            "type": "archive",
+            "url": "https://download.gnome.org/sources/libwnck/3.36/libwnck-3.36.0.tar.xz",
+            "sha256": "bc508150b3ed5d22354b0e6774ad4eee465381ebc0ace45eb0e2d3a4186c925f"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "name": "LibGTop",
+    "tags": ["monitor", "process"],
+    "data": [
+      {
+        "version": "2.40.0",
+        "module": {
+          "name": "libgtop",
+          "sources": {
+            "type": "archive",
+            "url": "https://download.gnome.org/sources/libgtop/2.40/libgtop-2.40.0.tar.xz",
+            "sha256": "78f3274c0c79c434c03655c1b35edf7b95ec0421430897fb1345a98a265ed2d4"
+          }
+        }
+      }
+    ]
   }
 ]
