@@ -245,7 +245,6 @@
         "module": {
           "name": "gst-libav",
           "buildsystem": "meson",
-          "config-opts": "--with-system-libav=no",
           "sources": [
             {
               "type": "archive",
@@ -261,7 +260,9 @@
         "module": {
           "name": "gst-libav",
           "buildsystem": "autotools",
-          "config-opts": "--with-system-libav=no",
+          "config-opts": [
+            "--with-system-libav=no"
+          ],
           "sources": [
             {
               "type": "archive",
