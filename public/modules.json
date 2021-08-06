@@ -286,23 +286,6 @@
     ]
   },
   {
-    "name": "BAMF",
-    "tags": ["libbamf"],
-    "data": [
-      {
-        "version": "0.5.5",
-        "module": {
-          "name": "bamf",
-          "sources": {
-            "type": "archive",
-            "url": "https://launchpad.net/bamf/0.5/0.5.5/+download/bamf-0.5.5.tar.xz",
-            "md5": "682269ccdde6f6842cceb3cd636d087e"
-          }
-        }
-      }
-    ]
-  },
-  {
     "name": "WNCK",
     "tags": [
       "window",
