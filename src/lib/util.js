@@ -8,5 +8,5 @@ export function filterModules(modules, query) {
       module.name.toLowerCase().includes(query.toLowerCase()) ||
       module.tags.some(tag => tag.includes(query.toLowerCase()))
     )
-    : modules.slice(0, 10);
+    : modules;
 }
