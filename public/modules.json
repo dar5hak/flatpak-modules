@@ -367,6 +367,7 @@
       }
     ]
   },
+  {
     "name": "VTE",
     "tags": ["virtual", "terminal", "emulator"],
     "data": [
