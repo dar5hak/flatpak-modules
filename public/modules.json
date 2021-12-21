@@ -252,9 +252,9 @@
     "data": [
       {
         "version": "1.19.1",
+        "finish-args": ["--env=GST_PLUGIN_PATH_1_0=/app/lib/gstreamer-1.0"],
         "module": {
           "name": "gst-libav",
-          "finish-args": ["--env=GST_PLUGIN_PATH_1_0=/app/lib/gstreamer-1.0"],
           "buildsystem": "meson",
           "sources": [
             {
@@ -267,9 +267,9 @@
       },
       {
         "version": "1.16.3",
+        "finish-args": ["--env=GST_PLUGIN_PATH_1_0=/app/lib/gstreamer-1.0"],
         "module": {
           "name": "gst-libav",
-          "finish-args": ["--env=GST_PLUGIN_PATH_1_0=/app/lib/gstreamer-1.0"],
           "buildsystem": "autotools",
           "config-opts": ["--with-system-libav=no"],
           "sources": [
