@@ -366,5 +366,27 @@
         }
       }
     ]
+  },
+    "name": "VTE",
+    "tags": ["virtual", "terminal", "emulator"],
+    "data": [
+      {
+        "version": "0.66.2",
+        "module": {
+          "name": "vte",
+          "buildsystem": "meson",
+          "config-opts": [
+            "-Ddocs=false"
+          ],
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://download.gnome.org/sources/vte/0.66/vte-0.66.2.tar.xz",
+              "sha256": "e89974673a72a0a06edac6d17830b82bb124decf0cb3b52cebc92ec3ff04d976"
+            }
+          ]
+        }
+      }
+    ]
   }
 ]
