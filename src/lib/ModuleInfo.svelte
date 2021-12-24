@@ -10,7 +10,7 @@
   export let format;
 
   let selectedVersion = module?.data[0];
-  let dataToDisplay = {
+  $: dataToDisplay = {
     ["finish-args"]: selectedVersion["finish-args"],
     module: selectedVersion.module,
   };
