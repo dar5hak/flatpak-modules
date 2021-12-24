@@ -10,6 +10,10 @@
   export let format;
 
   let selectedVersion = module?.data[0];
+  $: dataToDisplay = {
+    ["finish-args"]: selectedVersion["finish-args"],
+    module: selectedVersion.module,
+  };
 </script>
 
 <section>
@@ -23,17 +27,24 @@
         class="version"
         on:click={() => {
           selectedVersion = version;
-        }}
-      >
+        }}>
         {version.version}
       </button>
     {/if}
   {/each}
 
   {#if format === Format.YAML}
-    <pre><code class="language-yaml">{@html hljs.highlight('yaml', dump(selectedVersion.module, { lineWidth: 120 })).value}</code></pre>
+    <pre>
+      <code class="language-yaml">
+        {@html hljs.highlight('yaml', dump(dataToDisplay, { lineWidth: 120 })).value}
+      </code>
+    </pre>
   {:else if format === Format.JSON}
-    <pre><code class="language-json">{@html hljs.highlight('json', JSON.stringify(selectedVersion.module, null, 2)).value}</code></pre>
+    <pre>
+      <code class="language-json">
+        {@html hljs.highlight('json', JSON.stringify(dataToDisplay, null, 2)).value}
+      </code>
+    </pre>
   {/if}
 </section>
 
