@@ -11,8 +11,8 @@
 
   let selectedVersion = module?.data[0];
   let dataToDisplay = {
-    module: selectedVersion.module,
     ["finish-args"]: selectedVersion["finish-args"],
+    module: selectedVersion.module,
   };
 </script>
 
