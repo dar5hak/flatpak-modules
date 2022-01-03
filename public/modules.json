@@ -25,31 +25,31 @@
     "tags": ["libadwaita", "gtk", "touch", "gesture", "responsive"],
     "data": [
       {
-        "version": "1.0.0-alpha.2",
+        "version": "1.0.1",
         "module": {
           "name": "libadwaita",
           "buildsystem": "meson",
           "config-opts": ["-Dexamples=false", "-Dtests=false"],
           "sources": [
             {
-              "type": "git",
-              "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-              "tag": "1.0.0-alpha.2"
+              "type": "archive",
+              "url": "https://download-fallback.gnome.org/sources/libadwaita/1.0/libadwaita-1.0.1.tar.xz",
+              "sha256": "a4051984579ab0af46b55965634f3f6af9f60221e1726fcbc2061e6a97be4d48"
             }
           ]
         }
       },
       {
-        "version": "1.0.0-alpha.1",
+        "version": "1.0.0",
         "module": {
           "name": "libadwaita",
           "buildsystem": "meson",
           "config-opts": ["-Dexamples=false", "-Dtests=false"],
           "sources": [
             {
-              "type": "git",
-              "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
-              "tag": "1.0.0-alpha.1"
+              "type": "archive",
+              "url": "https://download-fallback.gnome.org/sources/libadwaita/1.0/libadwaita-1.0.0.tar.xz",
+              "sha256": "722d316492f7d80b66cbc97e95ce07c0ef2bfd6500a8ffe44b89070b06eefba3"
             }
           ]
         }
@@ -376,9 +376,7 @@
         "module": {
           "name": "vte",
           "buildsystem": "meson",
-          "config-opts": [
-            "-Ddocs=false"
-          ],
+          "config-opts": ["-Ddocs=false"],
           "sources": [
             {
               "type": "archive",
