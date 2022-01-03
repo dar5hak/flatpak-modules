@@ -1,26 +1,5 @@
 [
   {
-    "name": "Handy",
-    "tags": ["libhandy", "hdy", "gtk", "touch", "gesture", "responsive"],
-    "data": [
-      {
-        "version": "1.2.3",
-        "module": {
-          "name": "libhandy",
-          "buildsystem": "meson",
-          "sources": [
-            {
-              "type": "archive",
-              "url": "https://download.gnome.org/sources/libhandy/1.2/libhandy-1.2.3.tar.xz",
-              "sha256": "92ec4a581ec1b41dd07a4e8faaf5d52ae37cabb7e1fa7f944d6cafbe596b6d61"
-            }
-          ],
-          "cleanup": ["/bin"]
-        }
-      }
-    ]
-  },
-  {
     "name": "Adwaita",
     "tags": ["libadwaita", "gtk", "touch", "gesture", "responsive"],
     "data": [
@@ -52,6 +31,27 @@
               "sha256": "722d316492f7d80b66cbc97e95ce07c0ef2bfd6500a8ffe44b89070b06eefba3"
             }
           ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Handy",
+    "tags": ["libhandy", "hdy", "gtk", "touch", "gesture", "responsive"],
+    "data": [
+      {
+        "version": "1.2.3",
+        "module": {
+          "name": "libhandy",
+          "buildsystem": "meson",
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://download.gnome.org/sources/libhandy/1.2/libhandy-1.2.3.tar.xz",
+              "sha256": "92ec4a581ec1b41dd07a4e8faaf5d52ae37cabb7e1fa7f944d6cafbe596b6d61"
+            }
+          ],
+          "cleanup": ["/bin"]
         }
       }
     ]
